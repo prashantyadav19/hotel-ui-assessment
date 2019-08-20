@@ -15,8 +15,8 @@ const images = [
   "/static/kingroom.jpg",
   "/static/meeting.jpg",
   "/static/corridor.jpg",
-  "/static/corridor.jpg",
-  "/static/corridor.jpg"
+  "/static/Reforma-Lobby.jpg",
+  "/static/Tysons-Corner.jpg"
 ];
 
 /**
@@ -107,8 +107,12 @@ class HotelDetails extends Component {
         </header>
         <section className="back-image">
           <div className="outline">
-            <div className="imageWrap" />
-            <img src="/static/Hilton-header.jpg" alt="header-image" />
+            <img
+              src="/static/Hilton-header.jpg"
+              alt="header-image"
+              ClassName="fordesktop"
+            />
+
             {this.state.hotels && this.state.hotels.address ? (
               <address>
                 <p className="addLine1">{this.state.hotels.address.addr1}</p>
@@ -135,7 +139,20 @@ class HotelDetails extends Component {
                 </div>
                 {this.state.accordionItems.map ? (
                   <div className="item-body">
-                    <p>{this.state.hotels.items.map}</p>
+                    <div class="mapouter">
+                      <div class="gmap_canvas">
+                        <iframe
+                          width="600"
+                          height="300"
+                          id="gmap_canvas"
+                          src="https://maps.google.com/maps?q=Hilton%20Chicago%20%20720%20South%20Michigan%20Avenue%20Chicago%2C%20Illinois%2C%2060605&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                          frameborder="0"
+                          scrolling="no"
+                          marginheight="0"
+                          marginwidth="0"
+                        />
+                      </div>
+                    </div>
                   </div>
                 ) : (
                   ""
