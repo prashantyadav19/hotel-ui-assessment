@@ -4,7 +4,11 @@ import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
 import configs from "../../config";
-import { Gallery, Aminities } from "../../components/hotelDetails/hotelDetails";
+import {
+  Gallery,
+  Aminities,
+  Footer
+} from "../../components/hotelDetails/hotelDetails";
 
 const images = [
   "/static/digitalkey.jpg",
@@ -177,7 +181,7 @@ class HotelDetails extends Component {
                   />
                 </div>
                 {this.state.accordionItems.amenities ? (
-                  <div className="item-body">
+                  <div className="item-body aminities-body-style">
                     {this.state.amenities.map((item, index) => (
                       <Aminities name={item} key={index} />
                     ))}
@@ -210,6 +214,7 @@ class HotelDetails extends Component {
             }
           />
         )}
+        <Footer />
       </div>
     );
   }
