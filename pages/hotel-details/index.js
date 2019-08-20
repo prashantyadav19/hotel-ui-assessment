@@ -7,10 +7,10 @@ import configs from "../../config";
 import { Gallery, Aminities } from "../../components/hotelDetails/hotelDetails";
 
 const images = [
-  "//placekitten.com/1500/500",
-  "//placekitten.com/4000/3000",
-  "//placekitten.com/800/1200",
-  "//placekitten.com/1500/1500"
+  "/static/Digital-Key.jpg",
+  "/static/King-Room.jpg",
+  "/static/Meeting.jpg",
+  "/static/hotelexterior.jpg",
 ];
 
 /**
@@ -93,7 +93,7 @@ class HotelDetails extends Component {
         <section className="back-image">
           <div className="outline">
             <div className="imageWrap">
-              <img src="/static/hotelexterior.jpg" alt="image" />
+              <img src="/static/Hilton-header.jpg" alt="image" />
             </div>
             {this.state.hotels && this.state.hotels.address ? (
               <address>
