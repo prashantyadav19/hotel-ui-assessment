@@ -4,7 +4,7 @@ import axios from "axios";
 import Head from "next/head";
 import Link from "next/link";
 import configs from "../../config";
-import { Gallery } from "../../components/hotelDetails/hotelDetails";
+import { Gallery, Aminities } from "../../components/hotelDetails/hotelDetails";
 
 const images = [
   "//placekitten.com/1500/500",
@@ -28,7 +28,10 @@ class HotelDetails extends Component {
       },
       hotels: {},
       photoIndex: 0,
-      isOpen: false
+      isOpen: false,
+      amenities: ['Air Conditioning', 'Bathrooms', 'Breakout Rooms', 
+      'Conference Phone', 'Green Screen', 'Grill', 'Photography Lighting',
+       'Large Table', 'Sound System', 'Wifi']
     };
   }
 
@@ -165,7 +168,10 @@ class HotelDetails extends Component {
                 </div>
                 {this.state.accordionItems.amenities ? (
                   <div className="item-body">
-                    <p>{this.state.hotels.items.amenities}</p>
+                  {this.state.amenities.map((item, index) => (
+                    <Aminities name={item} key={index} />
+                  ))}
+                    
                   </div>
                 ) : (
                   ""
