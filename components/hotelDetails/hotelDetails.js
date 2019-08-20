@@ -25,4 +25,12 @@ export const Gallery = ({
   </div>
 );
 
-export const Aminities = ({}) => <div />;
+export const Aminities = ({ name }) => (
+  <div className="aminities-checkbox">
+    <label className="container">
+      {name}
+      <input type="checkbox" />
+      <span className="checkmark" />
+    </label>
+  </div>
+);

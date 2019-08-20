@@ -7,10 +7,12 @@ import configs from "../../config";
 import { Gallery, Aminities } from "../../components/hotelDetails/hotelDetails";
 
 const images = [
-  "/static/Digital-Key.jpg",
-  "/static/King-Room.jpg",
-  "/static/Meeting.jpg",
-  "/static/hotelexterior.jpg",
+  "/static/digitalkey.jpg",
+  "/static/kingroom.jpg",
+  "/static/meeting.jpg",
+  "/static/corridor.jpg",
+  "/static/corridor.jpg",
+  "/static/corridor.jpg"
 ];
 
 /**
@@ -29,9 +31,18 @@ class HotelDetails extends Component {
       hotels: {},
       photoIndex: 0,
       isOpen: false,
-      amenities: ['Air Conditioning', 'Bathrooms', 'Breakout Rooms', 
-      'Conference Phone', 'Green Screen', 'Grill', 'Photography Lighting',
-       'Large Table', 'Sound System', 'Wifi']
+      amenities: [
+        "Air Conditioning",
+        "Bathrooms",
+        "Breakout Rooms",
+        "Conference Phone",
+        "Green Screen",
+        "Grill",
+        "Photography Lighting",
+        "Large Table",
+        "Sound System",
+        "Wifi"
+      ]
     };
   }
 
@@ -92,9 +103,7 @@ class HotelDetails extends Component {
         </header>
         <section className="back-image">
           <div className="outline">
-            <div className="imageWrap">
-              <img src="/static/Hilton-header.jpg" alt="image" />
-            </div>
+            <div className="imageWrap" />
             {this.state.hotels && this.state.hotels.address ? (
               <address>
                 <p className="addLine1">{this.state.hotels.address.addr1}</p>
@@ -168,10 +177,9 @@ class HotelDetails extends Component {
                 </div>
                 {this.state.accordionItems.amenities ? (
                   <div className="item-body">
-                  {this.state.amenities.map((item, index) => (
-                    <Aminities name={item} key={index} />
-                  ))}
-                    
+                    {this.state.amenities.map((item, index) => (
+                      <Aminities name={item} key={index} />
+                    ))}
                   </div>
                 ) : (
                   ""
@@ -188,7 +196,7 @@ class HotelDetails extends Component {
             activeSrc={images[photoIndex]}
             nextSrc={images[(photoIndex + 1) % images.length]}
             prevSrc={images[(photoIndex + images.length - 1) % images.length]}
-            onCloseRequest={()=>(this.setState({ isOpen: false }))}
+            onCloseRequest={() => this.setState({ isOpen: false })}
             onMovePrevRequest={() =>
               this.setState({
                 photoIndex: (photoIndex + images.length - 1) % images.length
