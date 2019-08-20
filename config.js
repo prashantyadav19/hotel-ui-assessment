@@ -1,3 +1,3 @@
 export default {
-    API_URL: "http://localhost:8080/api"
-}
+  API_URL: "https://vfbu3.sse.codesandbox.io/api"
+};

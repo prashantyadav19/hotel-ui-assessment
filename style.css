@@ -224,6 +224,21 @@ p.addLine3 {
 .item-head.open .arrow {
     transform: rotate(90deg);
 }
+.item-body img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 2px;
+    width: 175px;
+    height: 175px;
+    margin: 5px 5px;
+    display: inline-flex;
+    cursor: pointer;
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .back-image {
