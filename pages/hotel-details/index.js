@@ -104,6 +104,7 @@ class HotelDetails extends Component {
         <section className="back-image">
           <div className="outline">
             <div className="imageWrap" />
+            <img src="/static/Hilton-header.jpg" alt="header-image" />
             {this.state.hotels && this.state.hotels.address ? (
               <address>
                 <p className="addLine1">{this.state.hotels.address.addr1}</p>

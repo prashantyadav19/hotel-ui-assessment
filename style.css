@@ -1,359 +1,360 @@
 .container {
-    max-width: 1400px !important;
+  max-width: 1400px !important;
 }
 
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, .125);
-    border-radius: .25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
-.imageWrap{
-    background-image:url(/static/Hilton-header.jpg);
-}
-label.checkbox-inline {
-    font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 1.8;
-    margin-left: 10px;
 
+label.checkbox-inline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.8;
+  margin-left: 10px;
 }
 
 .room1-heading {
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-left: 10px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: 10px;
 }
 
 div.submit-btn {
-    margin: 30px 20px;
+  margin: 30px 20px;
 }
 
 div.disabled {
-    opacity: 0.5;
-    background: #CCC;
-    pointer-events: none;
+  opacity: 0.5;
+  background: #ccc;
+  pointer-events: none;
 }
 
 input[type="checkbox"] {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 div.submit-btn {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 .card-body {
-
-    transition: 0.3s;
-    padding: 15px 9px;
-    border-top: 1px solid #eae9e9;
+  transition: 0.3s;
+  padding: 15px 9px;
+  border-top: 1px solid #eae9e9;
 }
 
 .btn {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.card:hover, .btn:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.card:hover,
+.btn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .header-with-checkbox {
-    padding: 7px 1px;
+  padding: 7px 1px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-    -webkit-font-smoothing: antialiased;
-    background: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: none;
 }
 
-h2, h3, h4, h5, h6 {
-    font-weight: 500;
-    color: #333;
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: #333;
 }
 
 .headerSite {
-    background: #1c1c1c;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em 1.5em;
-    border-bottom: 2px solid #474747;
+  background: #1c1c1c;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  border-bottom: 2px solid #474747;
 }
 
 .title {
-    font-size: 1.4em;
-    font-weight: 600;
-    color: #fff;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: #fff;
 }
 
 .backBtn {
-    background: #45484d;
-    color: #fff;
-    border: 2px solid #3a3a3a;
-    font-size: 1em;
-    padding: 0.4em 0.5em;
-    border-radius: 5px;
+  background: #45484d;
+  color: #fff;
+  border: 2px solid #3a3a3a;
+  font-size: 1em;
+  padding: 0.4em 0.5em;
+  border-radius: 5px;
 }
 
 .backBtn i {
-    margin-right: 0.4em;
+  margin-right: 0.4em;
 }
 
 .logoBox a img {
-    width: 38px;
+  width: 38px;
 }
 
 .logo a {
-    width: 30px;
-    display: block
+  width: 30px;
+  display: block;
 }
 
 .back-image {
-    background: url(/static/background.png) no-repeat center center/cover;
-    position: relative;
-    display: flex;
+  background: url(/static/background.png) no-repeat center center/cover;
+  position: relative;
+  display: flex;
 }
 
 .outline {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5em;
 }
 
 .imageWrap {
-    margin: 1.5em 0;
+  margin: 1.5em 0;
 }
 
 .imageWrap img {
-    border: 0.4em solid #fff;
+  border: 0.4em solid #fff;
 }
 
 address {
-    color: #fff;
-    font-style: normal;
-    font-size: 1.3em;
-    line-height: 1.4em;
-    padding-right: 1.7em;
-    margin-bottom: 1.5em
+  color: #fff;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  padding-right: 1.7em;
+  margin-bottom: 1.5em;
 }
 
 address .addLine1 {
-    font-weight: 600;
-    font-size: 1.1em;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 p.addLine2 {
-    color: #bddfff;
+  color: #bddfff;
 }
 
 p.addLine3 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .item {
-    border-radius: 0.7em;
-    overflow: hidden;
-    margin-bottom: 2em
+  border-radius: 0.7em;
+  overflow: hidden;
+  margin-bottom: 2em;
 }
 
 .item .item-head {
-    color: #001325;
-    background: url(/static/acc-bg.jpg) repeat-x;
-    border-bottom: 1px solid #f9f8f8;
-    position: relative;
-    padding: 0 1em;
-    font-size: 1.3em;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 45px;
+  color: #001325;
+  background: url(/static/acc-bg.jpg) repeat-x;
+  border-bottom: 1px solid #f9f8f8;
+  position: relative;
+  padding: 0 1em;
+  font-size: 1.3em;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
 }
 
 .item .item-head * {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .item .item-head h4 {
-    color: #001325;
-    font-weight: 700;
+  color: #001325;
+  font-weight: 700;
 }
 
 .item .item-head:hover {
-    filter: alpha(opacity=90);
-    opacity: 0.90;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
 }
 
 .item .item-body {
-    border-bottom: 1px solid #fff;
-    padding: 1.5em;
-    height: auto;
-    background: #fff;
+  border-bottom: 1px solid #fff;
+  padding: 1.5em;
+  height: auto;
+  background: #fff;
 }
 
 .arrow {
-    position: absolute;
-    right: 1em;
-    top: 0.7em;
-    transition: 0.3s all ease-in;
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
+  transition: 0.3s all ease-in;
 }
 
 .item-head.open .arrow {
-    transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .item-body img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 2px;
-    width: 175px;
-    height: 175px;
-    margin: 5px 5px;
-    display: inline-flex;
-    cursor: pointer;
-  }
-  
-  /* Add a hover effect (blue shadow) */
-  img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-  }
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 2px;
+  width: 175px;
+  height: 175px;
+  margin: 5px 5px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+/* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .back-image {
-        height: 100%
-    }
+  .back-image {
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .back-image {
-        height: 100%
-    }
+  .back-image {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .back-image {
-        height: 100%
-    }
-    .card{
-        margin: 10px;
-    }
-    .navbar-header a {
-        font-size: 14px;
-    }
-    .navbar-right a {
-        float: right;
-    }
+  .back-image {
+    height: 100%;
+  }
+  .card {
+    margin: 10px;
+  }
+  .navbar-header a {
+    font-size: 14px;
+  }
+  .navbar-right a {
+    float: right;
+  }
 }
 
 .navbar-header {
-    float: left;
-    padding: 15px;
-    text-align: center;
+  float: left;
+  padding: 15px;
+  text-align: center;
 }
 
 .nav > li > a {
-    color: #6c89f5 !important;
+  color: #6c89f5 !important;
 }
 
 .navbar-brand {
-    float: none;
-    font-size: 21px;
+  float: none;
+  font-size: 21px;
 }
 
-.room-buttons{
-    display: flex;
-    margin: 36px;
+.room-buttons {
+  display: flex;
+  margin: 36px;
 }
 .room-buttons .btn-success {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 /* Customize the label (the container) */
 .aminities-checkbox .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 12px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
- .aminities-checkbox .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 20px;
-    width: 20px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .aminities-checkbox .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .aminities-checkbox .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 8px;
-    top: 4px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.aminities-checkbox .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.aminities-checkbox .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.aminities-checkbox .container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
