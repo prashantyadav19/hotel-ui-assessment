@@ -65,7 +65,7 @@ class HotelDetails extends Component {
    */
   openAccordion = item => {
     const items = this.state.accordionItems;
-    console.log("ashish" + items[item]);
+
     items[item] = !items[item];
 
     this.setState({ accordionItems: items });
