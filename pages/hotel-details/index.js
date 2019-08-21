@@ -64,10 +64,14 @@ class HotelDetails extends Component {
    * @param item
    */
   openAccordion = item => {
-    const items = this.state.accordionItems;
-
-    items[item] = !items[item];
-
+    let items = this.state.accordionItems;
+    for (var key in items) {
+      if (item === key) {
+        items[key] = true;
+      } else {
+        items[key] = false;
+      }
+    }
     this.setState({ accordionItems: items });
   };
 
