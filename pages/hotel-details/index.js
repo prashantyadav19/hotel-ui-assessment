@@ -65,7 +65,9 @@ class HotelDetails extends Component {
    */
   openAccordion = item => {
     const items = this.state.accordionItems;
+    console.log("ashish" + items[item]);
     items[item] = !items[item];
+
     this.setState({ accordionItems: items });
   };
 
@@ -110,7 +112,7 @@ class HotelDetails extends Component {
             <img
               src="/static/Hilton-header.jpg"
               alt="header-image"
-              ClassName="fordesktop"
+              className="fordesktop"
             />
 
             {this.state.hotels && this.state.hotels.address ? (
@@ -139,17 +141,17 @@ class HotelDetails extends Component {
                 </div>
                 {this.state.accordionItems.map ? (
                   <div className="item-body">
-                    <div class="mapouter">
-                      <div class="gmap_canvas">
+                    <div className="mapouter">
+                      <div className="gmap_canvas">
                         <iframe
                           width="600"
                           height="300"
                           id="gmap_canvas"
                           src="https://maps.google.com/maps?q=Hilton%20Chicago%20%20720%20South%20Michigan%20Avenue%20Chicago%2C%20Illinois%2C%2060605&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                          frameborder="0"
+                          frameBorder="0"
                           scrolling="no"
-                          marginheight="0"
-                          marginwidth="0"
+                          marginHeight="0"
+                          marginWidth="0"
                         />
                       </div>
                     </div>

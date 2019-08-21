@@ -267,6 +267,18 @@ img:hover {
   .item-body img {
     margin: 10px 50px;
   }
+  iframe#gmap_canvas {
+    width: 100%;
+  }
+  address {
+    margin: 40px 0 40px;
+    width: 100%;
+    padding: 0 4.5em;
+  }
+  .item {
+    margin: 40px 0 40px;
+    padding: 0 5.5em;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -451,6 +463,9 @@ img:hover {
   }
 }
 @media (max-width: 767px) {
+  iframe#gmap_canvas {
+    width: 100%;
+  }
   address {
     margin: 40px 0 40px;
     width: 100%;
@@ -460,7 +475,11 @@ img:hover {
     margin: 40px 0 40px;
   }
   .item .item-body {
-    padding: 1.5em 3.6em;
+    padding: 10px 10px;
+  }
+  .item-body img {
+    height: 150px;
+    width: 46%;
   }
   .site-footer {
     padding-bottom: 0;
